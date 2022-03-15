@@ -9,7 +9,8 @@ let ganhador = document.getElementById("ganhador");
 valor = -1;
 numero = 0;
 
-add.addEventListener("click", () => {
+
+add.addEventListener("click",()=>{
   if (input.value === "") {
     document.getElementById("erro").innerHTML = "<p>Insira um nome</p>";
   } else {
@@ -23,7 +24,9 @@ add.addEventListener("click", () => {
       "length"
     ).innerHTML = `<p>Quantidade de participantes: ${pessoas.length}`;
   }
+
 });
+
 btn.addEventListener("click", () => {
   if (pessoas.length <= 1) {
     document.getElementById(
@@ -42,4 +45,5 @@ btn.addEventListener("click", () => {
     console.log(numero)
     console.log(pessoas.length)
   }
+
 });
