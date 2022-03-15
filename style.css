@@ -1,0 +1,107 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: yellow;
+    
+}
+@keyframes result{
+    0%{}
+    100%{left: 0;}
+}
+@keyframes calculo{
+    0%{}
+    100%{right: 100%;}
+}
+#divSorteio{
+    background-color: black;
+    height: 600px;
+    max-width: 600px;
+    min-width: 300px;
+    width: 100%;
+    margin:40px auto;
+    color: yellow;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    border-radius: 40px;
+    box-sizing: border-box;
+    animation-duration: 1s;
+    animation-timing-function: cubic-bezier(1, 0.165, 0.82, 0.075);
+    animation-fill-mode: forwards;
+    animation-iteration-count: 1;
+}
+#divGanhador{
+    background-color: white;
+    height: 600px;
+    width: 600px;
+    margin:40px auto;
+    color: yellow;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    border-radius: 40px;
+    box-sizing: border-box;
+    display: none;
+    position: relative;
+    left: -100%;
+    animation-duration: 1s;
+    animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+    animation-fill-mode: forwards;
+    animation-iteration-count: 1;
+}
+p{margin: 10px;
+border-bottom: black solid 2px;}
+#inputSorteio{
+    display: grid;
+    grid-template-areas: 
+    "a3 a3 a3 a3"
+    "a1 a1 a1 a2"
+    "a1 a1 a1 a2";
+    height: 100px;
+    gap: 30px 10px;
+    width:60%;
+    align-items: center;
+}
+
+input{
+    padding: 20px;
+    width: calc(100% - 40px);
+    background-color: yellow;
+    border: none;
+    outline: none;
+    grid-area: a1;
+}
+input::placeholder{
+    color: black;
+}
+#divParticipantes{
+    height: 200px;
+    background-color: yellow;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: black;
+    overflow-x: hidden;
+}
+#divParticipantes::-webkit-scrollbar{
+    background-color: yellow;
+}
+
+#divParticipantes::-webkit-scrollbar-thumb{
+    background-color: black;
+    border-radius: 10px;
+    border: yellow 1px solid;
+}
+#btn{
+    padding:20px 30px;
+    background-color: yellow;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: 800;
+}
